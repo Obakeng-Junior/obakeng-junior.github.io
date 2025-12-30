@@ -3,170 +3,409 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Obakeng Junior Mohale | IT Graduate</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Obakeng Junior Mohale - IT Graduate & Software Developer specializing in .NET, Flutter, SQL, and Cloud technologies.">
+  <meta name="keywords" content="Software Developer, IT Graduate, .NET, Flutter, SQL, Cloud, Web Development, Mobile Development">
+  <title>Obakeng Junior Mohale | IT Graduate & Software Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <span class="logo">OJM</span>
+        <span class="logo-text">Obakeng J. Mohale</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>Obakeng Junior Mohale</h1>
-    <h2>IT Graduate | Software Development | Data & Cloud</h2>
-    <p>.NET • Flutter • SQL • Firebase • REST APIs</p>
-  </section>
-
-  <!-- ABOUT ME -->
-  <section class="about">
-    <h3>About Me</h3>
-    <p>
-      I am an IT Graduate with strong academic performance and hands-on experience
-      in software development, database systems, and data analysis. I have built
-      web, mobile, and data-driven applications using .NET, Flutter, SQL, and cloud
-      technologies. I am passionate about solving real-world problems through
-      technology and continuously expanding my technical skill set.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="skills">
-    <h3>Technical Skills</h3>
-    <ul>
-      <li>Programming: C#, Dart, SQL, JavaScript</li>
-      <li>Frameworks: ASP.NET MVC, .NET Core, Entity Framework, Flutter</li>
-      <li>Databases: Microsoft SQL Server, Firebase Firestore, SQLite</li>
-      <li>APIs: RESTful API Design & Integration</li>
-      <li>Cloud & Tools: Firebase, Azure (Fundamentals), Git & GitHub</li>
-      <li>Practices: Agile, Debugging, Secure Authentication</li>
-    </ul>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="projects">
-    <h3>Projects</h3>
-
-    <!-- Main Smart LMS Project -->
-    <div class="project-card">
-      <div class="project-content">
-        <h3>AI-Powered Smart Learning Management System</h3>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Obakeng Junior Mohale</h1>
+        <h2>IT Graduate | Software Developer | Data & Cloud Specialist</h2>
         <p>
-          Advanced LMS combining a Flutter student app with ASP.NET Core MVC admin dashboard.
-          Features Smart Tutor, course enrollment, and real-time progress tracking.
+          Passionate about creating innovative software solutions using modern technologies.
+          Experienced in full-stack development with .NET, Flutter, and cloud platforms.
         </p>
-        <div class="project-links">
-          <a href="https://github.com/obakeng-junior/smart-learning-management-system" target="_blank" class="btn">
-            View on GitHub
+        <div class="tech-stack">
+          <span>.NET</span>
+          <span>Flutter</span>
+          <span>C#</span>
+          <span>SQL</span>
+          <span>Firebase</span>
+          <span>REST APIs</span>
+          <span>JavaScript</span>
+          <span>Azure</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#projects" class="btn">
+            <i class="fas fa-code"></i> View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Contact Me
           </a>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Smart LMS Gallery -->
-    <div class="project-gallery">
-      <img src="assets/images/smart-lms/student_homepage1.png" alt="Student Dashboard">
-      <img src="assets/images/smart-lms/student_homepage2.png" alt="Student Dashboard">
-      <img src="assets/images/smart-lms/student_aitutor.png" alt="AI Tutor Chat">
-      <img src="assets/images/smart-lms/admin_dashboard.png" alt="Admin Dashboard">
-      <img src="assets/images/smart-lms/admin student management.png" alt="Admin Student Management">
-      <img src="assets/images/smart-lms/admin_coursse management.png" alt="Admin Course Management">
-       <img src="assets/images/smart-lms/admin_coursecontent.png" alt="Admin Course Content">
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h3>About Me</h3>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I am an IT Graduate with strong academic performance and hands-on experience
+            in software development, database systems, and data analysis. I have built
+            web, mobile, and data-driven applications using .NET, Flutter, SQL, and cloud
+            technologies.
+          </p>
+          <p>
+            My passion lies in solving real-world problems through technology and
+            continuously expanding my technical skill set. I enjoy the entire development
+            process from concept to deployment, ensuring clean, efficient, and scalable
+            solutions.
+          </p>
+          <p>
+            Currently seeking opportunities to contribute to innovative projects and
+            collaborate with like-minded professionals in the tech industry.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight">
+            <i class="fas fa-graduation-cap"></i>
+            <h4>IT Graduate</h4>
+            <p>Strong academic foundation in computer science principles</p>
+          </div>
+          <div class="highlight">
+            <i class="fas fa-laptop-code"></i>
+            <h4>Full-Stack Developer</h4>
+            <p>Experience with both frontend and backend technologies</p>
+          </div>
+          <div class="highlight">
+            <i class="fas fa-cloud"></i>
+            <h4>Cloud Enthusiast</h4>
+            <p>Knowledge of Firebase, Azure, and cloud architecture</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h3>Technical Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4><i class="fas fa-code"></i> Programming & Frameworks</h4>
+          <ul>
+            <li>C# & .NET Framework/.NET Core</li>
+            <li>Dart & Flutter Framework</li>
+            <li>JavaScript (ES6+)</li>
+            <li>SQL & Database Design</li>
+            <li>ASP.NET MVC & Web API</li>
+            <li>Entity Framework Core</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-database"></i> Databases & Cloud</h4>
+          <ul>
+            <li>Microsoft SQL Server</li>
+            <li>Firebase Firestore & Realtime DB</li>
+            <li>SQLite & MySQL</li>
+            <li>Firebase Authentication & Hosting</li>
+            <li>Azure Fundamentals</li>
+            <li>RESTful API Integration</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-tools"></i> Tools & Practices</h4>
+          <ul>
+            <li>Git & GitHub Version Control</li>
+            <li>Agile & Scrum Methodologies</li>
+            <li>Debugging & Problem Solving</li>
+            <li>Secure Authentication Systems</li>
+            <li>Responsive Web Design</li>
+            <li>UI/UX Principles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h3>Featured Projects</h3>
       
+      <!-- Smart LMS Project -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>AI-Powered Smart Learning Management System</h3>
+          <p>
+            A comprehensive learning platform combining a Flutter mobile application for students 
+            with an ASP.NET Core MVC admin dashboard. Features include an AI-powered Smart Tutor, 
+            course enrollment system, real-time progress tracking, and advanced analytics.
+          </p>
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>ASP.NET Core</span>
+            <span>Firebase</span>
+            <span>SQL Server</span>
+            <span>REST API</span>
+            <span>AI Integration</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/obakeng-junior/smart-learning-management-system" target="_blank" class="btn">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+            <button class="btn btn-outline view-demo" data-project="lms">
+              <i class="fas fa-images"></i> View Screenshots
+            </button>
+          </div>
+        </div>
+        
+        <div class="project-gallery" id="lms-gallery">
+          <img src="assets/images/smart-lms/student_homepage1.png" alt="Smart LMS Student Dashboard">
+          <img src="assets/images/smart-lms/student_homepage2.png" alt="Smart LMS Course Interface">
+          <img src="assets/images/smart-lms/student_aitutor.png" alt="AI Tutor Chat Interface">
+          <img src="assets/images/smart-lms/admin_dashboard.png" alt="Admin Dashboard Overview">
+          <img src="assets/images/smart-lms/admin_student_management.png" alt="Student Management">
+          <img src="assets/images/smart-lms/admin_course_management.png" alt="Course Management">
+          <p>Application screenshots showcasing various features and interfaces</p>
+        </div>
+      </div>
+
+      <!-- Dark Hawk Security Project -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Dark Hawk Security – E-Commerce & Service Platform</h3>
+          <p>
+            Full-stack web application for security services and e-commerce management. 
+            Features include product catalog, shopping cart, service booking, customer 
+            support system, and comprehensive admin dashboard for business management.
+          </p>
+          <div class="project-tags">
+            <span>ASP.NET MVC</span>
+            <span>SQL Server</span>
+            <span>Entity Framework</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            <span>E-commerce</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/obakeng-junior/E-commerce-web-application" target="_blank" class="btn">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+            <button class="btn btn-outline view-demo" data-project="security">
+              <i class="fas fa-images"></i> View Screenshots
+            </button>
+          </div>
+        </div>
+        
+        <div class="project-gallery" id="security-gallery">
+          <img src="assets/images/dark-hawk/homepage.png" alt="Dark Hawk Homepage">
+          <img src="assets/images/dark-hawk/products.png" alt="Product Catalog">
+          <img src="assets/images/dark-hawk/cart.png" alt="Shopping Cart">
+          <img src="assets/images/dark-hawk/booking.png" alt="Service Booking">
+          <img src="assets/images/dark-hawk/admin_dashboard.png" alt="Admin Dashboard">
+          <img src="assets/images/dark-hawk/customer_inquiries.png" alt="Customer Support">
+          <p>Platform interfaces demonstrating user and admin functionality</p>
+        </div>
+      </div>
+
+      <!-- Additional Projects -->
+      <div class="projects-grid">
+        <div class="project-mini-card">
+          <div class="project-mini-content">
+            <h4>Fish Prices Web Application</h4>
+            <p>Data-driven web application for managing and analyzing real-time fish pricing using relational databases.</p>
+            <div class="project-tags">
+              <span>ASP.NET MVC</span>
+              <span>SQL Server</span>
+              <span>Data Analysis</span>
+            </div>
+            <a href="https://github.com/obakeng-junior/fish-prices-app" target="_blank" class="btn btn-small">
+              <i class="fab fa-github"></i> View Project
+            </a>
+          </div>
+        </div>
+
+        <div class="project-mini-card">
+          <div class="project-mini-content">
+            <h4>Employee Management System</h4>
+            <p>Secure system for managing employee data with role-based access control and reporting capabilities.</p>
+            <div class="project-tags">
+              <span>.NET</span>
+              <span>SQL Server</span>
+              <span>Authentication</span>
+            </div>
+            <a href="https://github.com/obakeng-junior/employee-management-system" target="_blank" class="btn btn-small">
+              <i class="fab fa-github"></i> View Project
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Other Projects -->
-    <!-- Dark Hawk Security Project -->
-<div class="project-card">
-  <div class="project-content">
-    <h3>Dark Hawk Security – E-Commerce & Service Platform</h3>
-    <p>
-      Full-stack web application for security services and e-commerce management. Customers can browse services and products, add items to their cart, book services, submit complaints, and checkout securely. Admins manage bookings, respond to complaints, and update product stock.
-    </p>
-    <div class="project-links">
-      <a href="https://github.com/obakeng-junior/E-commerce-web-application" target="_blank" class="btn">
-        View on GitHub
-      </a>
-    </div>
-  </div>
-
-  <!-- Screenshot Gallery -->
-  <div class="project-gallery">
-    <img src="assets/images/dark-hawk/homepage.png" alt="Homepage / Landing Page">
-     <img src="assets/images/dark-hawk/homepage1.png" alt="Homepage / Landing Page">
-    <p>Homepage: Initial landing page showing available services and products.</p>
-
-    <img src="assets/images/dark-hawk/products.png" alt="Products Catalog">
-    <img src="assets/images/dark-hawk/products1.png" alt="Products Catalog">
-    <p>Products Catalog: Customers browse products and add items to their cart.</p>
-
-    <img src="assets/images/dark-hawk/cart.png" alt="Cart and Checkout">
-    <p>Cart & Checkout: Users can review their cart and complete secure checkout.</p>
-
-    <img src="assets/images/dark-hawk/order.png" alt="Orders">
-    <p>Customer Orders: Customers can check their orders .</p>
-    
-    <img src="assets/images/dark-hawk/booking.png" alt="Service Booking">
-    <img src="assets/images/dark-hawk/booking1.png" alt="Service Booking">
-    <p>Service Booking: Customers can book security services online.</p>
-
-    <img src="assets/images/dark-hawk/messages.png" alt="Notifications">
-    <p>Notifications: Customers can view their notifications.</p>
-
-    <img src="assets/images/dark-hawk/product_management.png" alt="Admin Dashboard">
-     <img src="assets/images/dark-hawk/stock_management.png" alt="Admin Dashboard">
-    <p>Admin Dashboard: Admin manages products, stock, and overall system overview.</p>
-
-    <img src="assets/images/dark-hawk/customer_quiries.png" alt="Customer Inquiries">
-    <p>Customer Inquiries: Admin view and respond to customer inquiries.</p>
-
-    <img src="assets/images/dark-hawk/customer_bookings.png" alt="Customer Bookings">
-    <p>Customer Bookings: Admin reviews and responds to customer bookings</p>
-    
-     <img src="assets/images/dark-hawk/customer_orders.png" alt="Customer Orders">
-    <p>Customer Orders: Admin manages customer orders</p>
-  </div>
-</div>
-
-    <div class="project">
-      <h4>Fish Prices Web Application</h4>
-      <p>
-        Data-driven web application for managing and analyzing real-time fish
-        pricing using a relational database.
-      </p>
-      <p><strong>Technologies:</strong> ASP.NET MVC, SQL Server</p>
-      <a href="https://github.com/obakeng-junior/fish-prices-app" target="_blank">
-        View Project
-      </a>
-    </div>
-
-    <div class="project">
-      <h4>Employee Management System</h4>
-      <p>
-        Secure system for managing employee and departmental data with role-
-        based access control and reporting capabilities.
-      </p>
-      <p><strong>Technologies:</strong> .NET, SQL Server</p>
-      <a href="https://github.com/obakeng-junior/employee-management-system" target="_blank">
-        View Project
-      </a>
-    </div>
-
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <h3>Contact</h3>
-    <p>Phone: <a href="tel:+27817020446">081 702 0446</a></p>
-    <p>Email: <a href="mailto:obakengmohale836@gmail.com">obakengmohale836@gmail.com</a></p>
-    <p>LinkedIn: 
-      <a href="https://linkedin.com/in/obakeng-junior-mohale-23a1741a2" target="_blank">
-        linkedin.com/in/obakeng-junior-mohale-23a1741a2
-      </a>
-    </p>
-    <p>GitHub: 
-      <a href="https://github.com/obakeng-junior" target="_blank">
-        github.com/obakeng-junior
-      </a>
-    </p>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h3>Get In Touch</h3>
+      <p class="contact-intro">
+        I'm currently open to new opportunities and collaborations. 
+        Feel free to reach out if you'd like to discuss a project or just connect!
+      </p>
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-details">
+            <p>Phone</p>
+            <a href="tel:+27817020446">081 702 0446</a>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-details">
+            <p>Email</p>
+            <a href="mailto:obakengmohale836@gmail.com">obakengmohale836@gmail.com</a>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <div class="contact-details">
+            <p>LinkedIn</p>
+            <a href="https://linkedin.com/in/obakeng-junior-mohale-23a1741a2" target="_blank">
+              Obakeng Junior Mohale
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="contact-details">
+            <p>GitHub</p>
+            <a href="https://github.com/obakeng-junior" target="_blank">
+              github.com/obakeng-junior
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo">OJM</span>
+          <span class="footer-text">Obakeng Junior Mohale</span>
+        </div>
+        <p class="footer-tagline">Building innovative solutions with modern technologies</p>
+        <div class="footer-social">
+          <a href="https://github.com/obakeng-junior" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/obakeng-junior-mohale-23a1741a2" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:obakengmohale836@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2023 Obakeng Junior Mohale. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          // Close mobile menu if open
+          navLinks.classList.remove('active');
+          menuToggle.classList.remove('active');
+          
+          // Smooth scroll to target
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Project gallery toggle
+    const viewDemoButtons = document.querySelectorAll('.view-demo');
+    viewDemoButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const project = button.getAttribute('data-project');
+        const gallery = document.getElementById(`${project}-gallery`);
+        
+        if (gallery) {
+          gallery.classList.toggle('active');
+          button.innerHTML = gallery.classList.contains('active') 
+            ? '<i class="fas fa-times"></i> Hide Screenshots' 
+            : '<i class="fas fa-images"></i> View Screenshots';
+        }
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
