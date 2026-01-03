@@ -100,7 +100,107 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+// ============================================
+// CV DOWNLOAD FUNCTIONALITY
+// ============================================
 
+function setupCVDownload() {
+  // Set current date for CV
+  const cvDateElement = document.getElementById('cvDate');
+  if (cvDateElement) {
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long' };
+    cvDateElement.textContent = today.toLocaleDateString('en-US', options);
+  }
+  
+  // Track download count (using localStorage)
+  const downloadCountElement = document.getElementById('downloadCount');
+  const downloadButton = document.querySelector('.cv-download-btn');
+  
+  if (downloadCountElement && downloadButton) {
+    // Get current count from localStorage
+    let downloadCount = localStorage.getItem('cvDownloadCount') || 0;
+    downloadCountElement.textContent = downloadCount;
+    
+    // Track download when button is clicked
+    downloadButton.addEventListener('click', function(e) {
+      // Prevent default to show animation first
+      e.preventDefault();
+      
+      // Increment count
+      downloadCount++;
+      localStorage.setItem('cvDownloadCount', downloadCount);
+      downloadCountElement.textContent = downloadCount;
+      
+      // Add download animation
+      const originalText = this.innerHTML;
+      this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Downloading...';
+      this.classList.add('downloading');
+      this.style.pointerEvents = 'none';
+      
+      // Simulate download delay for better UX
+      setTimeout(() => {
+        // Actually trigger the download
+        const link = document.createElement('a');
+        link.href = this.getAttribute('href');
+        link.download = this.getAttribute('download') || 'Obakeng_Mohale_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        // Reset button text after download
+        this.innerHTML = '<i class="fas fa-check"></i> Downloaded!';
+        
+        // Reset to original after 1.5 seconds
+        setTimeout(() => {
+          this.innerHTML = originalText;
+          this.classList.remove('downloading');
+          this.style.pointerEvents = 'auto';
+        }, 1500);
+        
+        // Log download event
+        console.log('CV downloaded! Total downloads:', downloadCount);
+        
+        // Optional: Send analytics event
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'cv_download', {
+            'event_category': 'engagement',
+            'event_label': 'CV Download',
+            'value': downloadCount
+          });
+        }
+      }, 800);
+    });
+  }
+  
+  // Add animation for CV card hover
+  const cvCard = document.querySelector('.cv-card');
+  if (cvCard) {
+    cvCard.addEventListener('mouseenter', function() {
+      const icon = this.querySelector('.cv-icon i');
+      if (icon) {
+        icon.style.transform = 'scale(1.1) rotate(5deg)';
+        icon.style.transition = 'transform 0.3s ease';
+      }
+    });
+    
+    cvCard.addEventListener('mouseleave', function() {
+      const icon = this.querySelector('.cv-icon i');
+      if (icon) {
+        icon.style.transform = 'scale(1) rotate(0deg)';
+      }
+    });
+  }
+  
+  // Add manual download fallback
+  const manualDownloadLink = document.querySelector('.cv-note a');
+  if (manualDownloadLink && manualDownloadLink.textContent.includes('click here')) {
+    manualDownloadLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(this.href, '_blank');
+    });
+  }
+}
 // Form submission
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
