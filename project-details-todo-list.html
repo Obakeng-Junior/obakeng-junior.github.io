@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Angular To-Do List - Project Details</title>
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+
+      <a href="index.html" class="logo">
+        <i class="fas fa-code"></i>
+        <span>Obakeng Junior</span>
+      </a>
+
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="index.html#education" class="nav-link">Education</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- Project Detail Content -->
+  <div class="project-detail-container">
+
+    <a href="index.html#projects" class="back-button">
+      <i class="fas fa-arrow-left"></i> Back to Projects
+    </a>
+
+
+    <!-- Project Header -->
+    <div class="project-detail-header">
+
+      <h1>Angular To-Do List</h1>
+
+      <div class="project-detail-meta">
+        <span class="project-detail-type">
+          Angular Web Application
+        </span>
+
+        <span class="project-detail-date">
+          <i class="far fa-calendar"></i> Completed: 2026
+        </span>
+      </div>
+
+
+      <div class="project-detail-tech">
+
+        <span class="tech-tag">Angular</span>
+        <span class="tech-tag">TypeScript</span>
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">LocalStorage</span>
+
+      </div>
+
+    </div>
+
+
+    <!-- Project Description -->
+    <div class="project-detail-description">
+
+      <p>
+        An Angular task management application that allows users to view,
+        add, and remove tasks, with task data stored in the browser's
+        localStorage.
+      </p>
+
+      <p>
+        The application provides a simple interface where users can select
+        a user and manage their associated tasks directly from the browser.
+      </p>
+
+
+      <h3>Key Features:</h3>
+
+      <ul>
+        <li>Display a list of users</li>
+        <li>Select a user to view their tasks</li>
+        <li>Add new tasks</li>
+        <li>Remove existing tasks</li>
+        <li>Store task data using browser localStorage</li>
+        <li>Interactive and responsive user interface</li>
+      </ul>
+
+
+      <h3>Technical Architecture:</h3>
+
+      <p>
+        The application is built using Angular's component-based architecture
+        with TypeScript for application logic. User and task functionality is
+        separated into reusable Angular components, while localStorage is used
+        to persist task data within the browser.
+      </p>
+
+    </div>
+
+
+    <!-- Project Links -->
+    <div class="project-detail-links">
+
+      <a href="https://github.com/Obakeng-Junior/angular-to-do-list-app"
+         target="_blank"
+         class="btn btn-primary">
+
+        <i class="fab fa-github"></i>
+        View on GitHub
+
+      </a>
+
+      <a href="index.html#projects" class="btn btn-outline">
+
+        <i class="fas fa-arrow-left"></i>
+        Back to Projects
+
+      </a>
+
+    </div>
+
+
+    <!-- Project Screenshots -->
+    <div class="project-screenshots">
+
+      <h2>Project Screenshots</h2>
+
+
+      <!-- User Selection -->
+      <div class="screenshot-section">
+
+        <h3>User Selection</h3>
+
+        <div class="screenshot-grid">
+
+          <div class="screenshot-item">
+
+            <img
+              src="assets/images/todo-list/homepage.png"
+              alt="To-Do List User Selection"
+              class="screenshot-img"
+            >
+
+            <div class="screenshot-caption">
+
+              <strong>User Selection</strong>
+
+              Select a user from the list to view and manage their tasks.
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Task Management -->
+      <div class="screenshot-section">
+
+        <h3>Task Management</h3>
+
+        <div class="screenshot-grid">
+
+
+          <div class="screenshot-item">
+
+            <img
+              src="assets/images/todo-list/taskview-withno details.png"
+              alt="To-Do List Tasks"
+              class="screenshot-img"
+            >
+
+            <div class="screenshot-caption">
+
+              <strong>Task List</strong>
+
+              View the selected user's tasks and manage the current task list.
+
+            </div>
+
+          </div>
+
+
+          <div class="screenshot-item">
+
+            <img
+              src="assets/images/todo-list/add-task.png"
+              alt="Add Task"
+              class="screenshot-img"
+            >
+
+            <div class="screenshot-caption">
+
+              <strong>Add Task</strong>
+
+              Add new tasks to the selected user's task list.
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Local Storage -->
+      <div class="screenshot-section">
+
+        <h3>Data Persistence</h3>
+
+        <div class="screenshot-grid">
+
+          <div class="screenshot-item">
+
+            <img
+              src="assets/images/todo-list/view added task.png"
+              alt="Browser Local Storage"
+              class="screenshot-img"
+            >
+
+            <div class="screenshot-caption">
+
+              <strong>Local Storage</strong>
+
+              Task data is stored in the browser's localStorage so that
+              changes persist between sessions.
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="footer-content">
+
+      <p>
+        &copy; <span id="currentYear"></span>
+        Obakeng Junior Mohale. All rights reserved.
+      </p>
+
+      <p class="copyright">
+        Designed and developed with  by Obakeng Junior Mohale
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop">
+
+    <i class="fas fa-chevron-up"></i>
+
+  </a>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
