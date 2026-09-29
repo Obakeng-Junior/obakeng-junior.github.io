@@ -1,0 +1,305 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angular Investment Calculator - Project Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-code"></i> <span>Obakeng Junior</span>
+      </a>
+
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="index.html#education" class="nav-link">Education</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Project Detail Content -->
+  <div class="project-detail-container">
+
+    <a href="index.html#projects" class="back-button">
+      <i class="fas fa-arrow-left"></i> Back to Projects
+    </a>
+
+
+    <!-- Project Header -->
+    <div class="project-detail-header">
+
+      <h1>Angular Investment Calculator</h1>
+
+      <div class="project-detail-meta">
+        <span class="project-detail-type">Angular Web Application</span>
+        <span class="project-detail-date">
+          <i class="far fa-calendar"></i> Completed: 2026
+        </span>
+      </div>
+
+      <div class="project-detail-tech">
+        <span class="tech-tag">Angular</span>
+        <span class="tech-tag">TypeScript</span>
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+      </div>
+
+    </div>
+
+
+    <!-- Project Description -->
+    <div class="project-detail-description">
+
+      <p>
+        A responsive Angular web application that helps users estimate how
+        their investments could grow over time based on their starting amount,
+        annual contributions, expected return rate, and investment period.
+      </p>
+
+      <p>
+        The application provides a simple way to explore long-term investment
+        projections. Users enter their investment assumptions and receive a
+        year-by-year breakdown showing how their investment value and interest
+        accumulation can change over time.
+      </p>
+
+
+      <h3>Key Features:</h3>
+
+      <ul>
+        <li>Initial investment input</li>
+        <li>Annual contribution input</li>
+        <li>Expected annual return rate</li>
+        <li>Investment duration in years</li>
+        <li>Real-time investment growth projection</li>
+        <li>Year-by-year investment breakdown</li>
+        <li>Annual interest calculation</li>
+        <li>Total accumulated interest calculation</li>
+        <li>Total amount invested calculation</li>
+        <li>Responsive and user-friendly interface</li>
+      </ul>
+
+
+      <h3>Technical Architecture:</h3>
+
+      <p>
+        The application was developed using Angular's standalone component
+        architecture. The user input functionality is separated from the
+        investment results presentation, allowing the application to maintain
+        a clear separation of responsibilities.
+      </p>
+
+      <p>
+        The main calculation logic is handled by the Angular application
+        component, while dedicated components are used for collecting user
+        inputs and displaying the investment results. TypeScript is used
+        throughout the application to provide strongly typed data structures
+        and maintain predictable application logic.
+      </p>
+
+
+      <h3>Project Structure:</h3>
+
+      <ul>
+        <li>
+          <strong>user-input</strong> – Handles investment input controls
+          and user interaction
+        </li>
+
+        <li>
+          <strong>investment-results</strong> – Displays the calculated
+          year-by-year investment results
+        </li>
+
+        <li>
+          <strong>app.component.ts</strong> – Contains the main investment
+          calculation logic
+        </li>
+
+        <li>
+          <strong>investment-input.model.ts</strong> – Defines the typed
+          investment input model
+        </li>
+      </ul>
+
+
+      <h3>How It Works:</h3>
+
+      <p>
+        The calculator applies the expected annual return rate to the current
+        investment value for each year and then adds the user's annual
+        contribution. This process is repeated for the selected investment
+        period to produce a year-by-year projection.
+      </p>
+
+      <p>
+        The calculated results are presented in a structured table, allowing
+        users to follow the investment's projected growth, annual interest,
+        accumulated interest, and total contributions over time.
+      </p>
+
+
+      <h3>Example:</h3>
+
+      <p>
+        For example, a user can enter an initial investment of
+        <strong>R10,000</strong>, an annual contribution of
+        <strong>R2,000</strong>, an expected annual return of
+        <strong>7%</strong>, and an investment period of
+        <strong>5 years</strong>.
+      </p>
+
+      <p>
+        The application then generates a year-by-year projection showing the
+        estimated investment value and interest earned throughout the
+        selected period.
+      </p>
+
+    </div>
+
+
+    <!-- Project Links -->
+    <div class="project-detail-links">
+
+      <a
+        href="https://github.com/obakeng-junior/investment-calculator"
+        target="_blank"
+        class="btn btn-primary">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+
+      <a
+        href="index.html#projects"
+        class="btn btn-outline">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+      </a>
+
+    </div>
+
+
+    <!-- Project Screenshots Section -->
+    <div class="project-screenshots">
+
+      <h2>Project Screenshots</h2>
+
+
+      <!-- Main Application -->
+      <div class="screenshot-section">
+
+        <h3>Investment Calculator</h3>
+
+        <div class="screenshot-grid">
+
+          <div class="screenshot-item">
+
+            <img
+              src="assets/images/investment-calculator/homepage.png"
+              alt="Investment Calculator Interface"
+              class="screenshot-img">
+
+            <div class="screenshot-caption">
+
+              <strong>Investment Calculator Interface</strong>
+
+              User-friendly investment calculator interface where users
+              enter their starting investment, annual contribution,
+              expected return rate, and investment period.
+
+            </div>
+
+          </div>
+           <div class="screenshot-item">
+
+            <img
+              src="assets/images/investment-calculator/input.png"
+              alt="Investment Calculator Interface"
+              class="screenshot-img">
+
+            <div class="screenshot-caption">
+
+              <strong>Investment Calculator Interface Input data</strong>
+
+              User-friendly investment calculator interface where users
+              enter their starting investment, annual contribution,
+              expected return rate, and investment period.
+
+            </div>
+
+          </div>
+
+
+          <div class="screenshot-item">
+
+            <img
+              src="assets/images/investment-calculator/results.png"
+              alt="Investment Projection Results"
+              class="screenshot-img">
+
+            <div class="screenshot-caption">
+
+              <strong>Investment Projection Results</strong>
+
+              Year-by-year projection showing investment value, annual
+              interest, accumulated interest, and total amount invested.
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="footer-content">
+
+      <p>
+        &copy;
+        <span id="currentYear"></span>
+        Obakeng Junior Mohale. All rights reserved.
+      </p>
+
+      <p class="copyright">
+        Designed and developed with by Obakeng Junior Mohale
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+```
