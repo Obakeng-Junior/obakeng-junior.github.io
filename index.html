@@ -89,161 +89,235 @@
   </div>
 </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="section-header">
-      <h2>My Projects</h2>
-      <p>My recent work showcasing different technologies and problem-solving approaches</p>
-    </div>
-    
-    <div class="projects-grid">
-      <!-- Project 1 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="assets/images/slms.png" alt="Smart Learning Management System" class="project-main-img">
-          <div class="project-img-overlay">
-            <span class="project-type">Mobile & Web App</span>
-          </div>
-        </div>
-        <div class="project-content">
-          <h3>Smart Learning Management System</h3>
-          <p>Advanced LMS combining a Flutter student app with ASP.NET Core MVC admin dashboard. Features Smart Tutor, course enrollment, and real-time progress tracking.</p>
-          <div class="project-tech">
-            <span class="tech-tag">Flutter</span>
-            <span class="tech-tag">ASP.NET Core</span>
-            <span class="tech-tag">Firebase</span>
-            <span class="tech-tag">SQL Server</span>
-          </div>
-          <div class="project-links">
-            <a href="project-details-smart-lms.html" class="btn btn-primary">
-              <i class="fas fa-info-circle"></i> View Details
-            </a>
-            <a href="https://github.com/obakeng-junior/smart-learning-management-system" target="_blank" class="btn btn-outline">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Project 2 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="assets/images/dark.png" alt="E-Commerce Platform" class="project-main-img">
-          <div class="project-img-overlay">
-            <span class="project-type">Full-Stack Web App</span>
-          </div>
-        </div>
-        <div class="project-content">
-          <h3>Dark Hawk Security – E-Commerce Platform</h3>
-          <p>Full-stack web application for security services and e-commerce management. Customers can browse services, book appointments, and make purchases securely.</p>
-          <div class="project-tech">
-            <span class="tech-tag">ASP.NET MVC</span>
-            <span class="tech-tag">C#</span>
-            <span class="tech-tag">SQL Server</span>
-            <span class="tech-tag">JavaScript</span>
-          </div>
-          <div class="project-links">
-            <a href="project-details-dark-hawk.html" class="btn btn-primary">
-              <i class="fas fa-info-circle"></i> View Details
-            </a>
-            <a href="https://github.com/obakeng-junior/E-commerce-web-application" target="_blank" class="btn btn-outline">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Project 3 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="assets/images/fish.png" alt="Fish Price Calculator" class="project-main-img">
-          <div class="project-img-overlay">
-            <span class="project-type">Web Application</span>
-          </div>
-        </div>
-        <div class="project-content">
-          <h3>FishPrices - Fish Catch Price Calculator</h3>
-          <p>ASP.NET Core MVC web app that lets fishermen calculate the total value of their catch. Enter kilograms of each fish type to get an itemized summary with grand total.</p>
-          <div class="project-tech">
-            <span class="tech-tag">ASP.NET Core</span>
-            <span class="tech-tag">MVC</span>
-            <span class="tech-tag">C#</span>
-            <span class="tech-tag">Bootstrap</span>
-          </div>
-          <div class="project-links">
-            <a href="project-details-fishprices.html" class="btn btn-primary">
-              <i class="fas fa-info-circle"></i> View Details
-            </a>
-            <a href="https://github.com/Obakeng-Junior/Fish-Price-Calculations" target="_blank" class="btn btn-outline">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Project 4 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="assets/images/security1.jpg" alt="Security Management System" class="project-main-img">
-          <div class="project-img-overlay">
-            <span class="project-type">Security Web App</span>
-          </div>
-        </div>
-        <div class="project-content">
-          <h3>Secure User Management System</h3>
-          <p>A security-focused ASP.NET Core MVC web application demonstrating manual authentication, role-based access control, and secure user management.</p>
-          <div class="project-tech">
-            <span class="tech-tag">ASP.NET Core</span>
-            <span class="tech-tag">Security</span>
-            <span class="tech-tag">Authentication</span>
-            <span class="tech-tag">SQL Server</span>
-          </div>
-          <div class="project-links">
-            <a href="project-details-security.html" class="btn btn-primary">
-              <i class="fas fa-info-circle"></i> View Details
-            </a>
-            <a href="https://github.com/obakeng-junior/security-feature-mini-project" target="_blank" class="btn btn-outline">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Project 5 -->
-<div class="project-card">
-  <div class="project-image">
-    <img src="assets/images/investment-calculator.jpg" alt="Investment Calculator" class="project-main-img">
-    <div class="project-img-overlay">
-      <span class="project-type">Angular Web App</span>
-    </div>
+  ```html
+<!-- Projects Section -->
+<section id="projects">
+  <div class="section-header">
+    <h2>My Projects</h2>
+    <p>My recent work showcasing different technologies and problem-solving approaches</p>
   </div>
 
-  <div class="project-content">
-    <h3>Investment Calculator</h3>
+  <div class="projects-grid">
 
-    <p>
-      Angular-based investment calculator that helps users estimate investment growth based on contributions, interest rates, and investment periods.
-    </p>
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/images/slms.png"
+             alt="Smart Learning Management System"
+             class="project-main-img">
 
-    <div class="project-tech">
-      <span class="tech-tag">Angular</span>
-      <span class="tech-tag">TypeScript</span>
-      <span class="tech-tag">HTML</span>
-      <span class="tech-tag">CSS</span>
+        <div class="project-img-overlay">
+          <span class="project-type">Mobile & Web App</span>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3>Smart Learning Management System</h3>
+
+        <p>
+          Advanced LMS combining a Flutter student app with ASP.NET Core MVC
+          admin dashboard. Features Smart Tutor, course enrollment, and
+          real-time progress tracking.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">ASP.NET Core</span>
+          <span class="tech-tag">Firebase</span>
+          <span class="tech-tag">SQL Server</span>
+        </div>
+
+        <div class="project-links">
+          <a href="project-details-smart-lms.html" class="btn btn-primary">
+            <i class="fas fa-info-circle"></i> View Details
+          </a>
+
+          <a href="https://github.com/obakeng-junior/smart-learning-management-system"
+             target="_blank"
+             class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="project-links">
-      <a href="project-details-investment-calculator.html" class="btn btn-primary">
-        <i class="fas fa-info-circle"></i> View Details
-      </a>
 
-      <a href="https://github.com/obakeng-junior/investment-calculator" target="_blank" class="btn btn-outline">
-        <i class="fab fa-github"></i> GitHub
-      </a>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/images/dark.png"
+             alt="Dark Hawk Security E-Commerce Platform"
+             class="project-main-img">
+
+        <div class="project-img-overlay">
+          <span class="project-type">Full-Stack Web App</span>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3>Dark Hawk Security – E-Commerce Platform</h3>
+
+        <p>
+          Full-stack web application for security services and e-commerce
+          management. Customers can browse services, book appointments,
+          and make purchases securely.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-tag">ASP.NET MVC</span>
+          <span class="tech-tag">C#</span>
+          <span class="tech-tag">SQL Server</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+
+        <div class="project-links">
+          <a href="project-details-dark-hawk.html" class="btn btn-primary">
+            <i class="fas fa-info-circle"></i> View Details
+          </a>
+
+          <a href="https://github.com/obakeng-junior/E-commerce-web-application"
+             target="_blank"
+             class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
     </div>
+
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/images/fish.png"
+             alt="Fish Price Calculator"
+             class="project-main-img">
+
+        <div class="project-img-overlay">
+          <span class="project-type">Web Application</span>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3>FishPrices - Fish Catch Price Calculator</h3>
+
+        <p>
+          ASP.NET Core MVC web app that lets fishermen calculate the total
+          value of their catch. Enter kilograms of each fish type to get
+          an itemized summary with grand total.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-tag">ASP.NET Core</span>
+          <span class="tech-tag">MVC</span>
+          <span class="tech-tag">C#</span>
+          <span class="tech-tag">Bootstrap</span>
+        </div>
+
+        <div class="project-links">
+          <a href="project-details-fishprices.html" class="btn btn-primary">
+            <i class="fas fa-info-circle"></i> View Details
+          </a>
+
+          <a href="https://github.com/Obakeng-Junior/Fish-Price-Calculations"
+             target="_blank"
+             class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Project 4 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/images/security1.jpg"
+             alt="Secure User Management System"
+             class="project-main-img">
+
+        <div class="project-img-overlay">
+          <span class="project-type">Security Web App</span>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3>Secure User Management System</h3>
+
+        <p>
+          A security-focused ASP.NET Core MVC web application demonstrating
+          manual authentication, role-based access control, and secure
+          user management.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-tag">ASP.NET Core</span>
+          <span class="tech-tag">Security</span>
+          <span class="tech-tag">Authentication</span>
+          <span class="tech-tag">SQL Server</span>
+        </div>
+
+        <div class="project-links">
+          <a href="project-details-security.html" class="btn btn-primary">
+            <i class="fas fa-info-circle"></i> View Details
+          </a>
+
+          <a href="https://github.com/obakeng-junior/security-feature-mini-project"
+             target="_blank"
+             class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Project 5 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/images/investment-calculator.jpg"
+             alt="Angular Investment Calculator"
+             class="project-main-img">
+
+        <div class="project-img-overlay">
+          <span class="project-type">Angular Web App</span>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3>Angular Investment Calculator</h3>
+
+        <p>
+          Angular-based investment calculator that helps users estimate
+          investment growth based on contributions, interest rates,
+          and investment periods.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-tag">Angular</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+        </div>
+
+        <div class="project-links">
+          <a href="project-details-investment-calculator.html"
+             class="btn btn-primary">
+            <i class="fas fa-info-circle"></i> View Details
+          </a>
+
+          <a href="https://github.com/obakeng-junior/investment-calculator"
+             target="_blank"
+             class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
-</div>
+</section>
+```
+
 
   <!-- Skills Section -->
   <section id="skills">
